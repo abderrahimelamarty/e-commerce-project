@@ -35,7 +35,7 @@ export const Navbar = ({user,totalProducts,uid}) => {
     </ul>
     </>}
 
-{client==admin&&
+{user&&client==admin&&
 <>
 <ul className="navbar-nav justify-content-center">
   <li className="nav-item">
@@ -59,7 +59,7 @@ export const Navbar = ({user,totalProducts,uid}) => {
   </ul>
 </>
 }
-{client!==admin &&
+{user&&client!==admin &&
 <>
 <ul className="navbar-nav justify-content-center">
   <li className="nav-item">
